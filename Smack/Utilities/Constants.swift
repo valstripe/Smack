@@ -10,3 +10,5 @@ import Foundation
 
 //MARK: - Segues
 let TO_LOGIN = "toLogin"
+let TO_SIGNUP = "toSignup"
+let UNWIND = "unwindToChannel"

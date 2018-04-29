@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  SignupVC.swift
 //  Smack
 //
 //  Created by Valentinas Stripeika on 4/29/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class SignupVC: UIViewController {
 
     //MARK: - Events
     override func viewDidLoad() {
@@ -19,12 +19,7 @@ class LoginVC: UIViewController {
 
     //MARK: - Actions
     @IBAction func closeBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: UNWIND, sender: nil)
     }
-    
-    @IBAction func signupBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_SIGNUP, sender: nil)
-    }
-    
     
 }
